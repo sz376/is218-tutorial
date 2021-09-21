@@ -36,21 +36,27 @@
     <div class="card-body">
       <h2 class="card-title">How to make a git repository</h2>
       <ol>
-        <li>Enter terminal and enter “cd Desktop”</li>
-        <li>Enter “mkdir” command and name it IS-Website, then “cd IS-Website”</li>
+        <li>Enter terminal and enter <code>cd Desktop</code></li>
+        <li>Enter <code>mkdir</code> command and name it IS-Website, then <code>cd IS-Website</code></li>
         <li>Once inside the directory, enter git init to initialize a local git repository</li>
-        <li>Enter “mkdir public_html”</li>
-        <li>Enter "touch public_html/index.html" to make an html page</li>
+        <li>Enter <code>mkdir public_html</code></li>
+        <li>Enter <code>touch public_html/index.html</code> to make an html page</li>
         <li>Go on to <a href="https://github.com/" target="_blank">github.com</a>, log in, and make a new git repository without the README.md</li>
         <li>Copy and paste your new github link</li>
+        <br>
         <img src="images/public_repo.png" class="remote-img">
-        <li>Enter "git branch -M main" to change branch name to default branch name on public repo</li>
-        <li>Enter "git remote add origin https://github.com/{username}/{git_repo_name}.git" so that your changes will go to this public repo</li>
+        <br>
+        <br>
+        <li>Enter <code>git branch -M main</code> to change branch name to default branch name on public repo</li>
+        <li>Enter <code>git remote add origin https://github.com/{username}/{git_repo_name}.git</code> so that your changes will go to this public repo</li>
+        <br>
         <img src="images/git_remote.png" class="remote-img">
+        <br>
+        <br>
         <li>Enter git status to look at what state your files are in (changed, ready to commit, etc.)</li>
-        <li>Enter "git add ." to add all files to be ready to commited</li>
-        <li>Enter a "git commit -m "Intial commit" for your first commit to the repo</li>
-        <li>Enter "git push origin main" to push changes to git repo</li>
+        <li>Enter <code>git add .</code> to add all files to be ready to commited</li>
+        <li>Enter a <code>git commit -m "Intial commit</code> for your first commit to the repo</li>
+        <li>Enter <code>git push origin main</code> to push changes to git repo</li>
       </ol>
     </div>
   </div>
@@ -58,14 +64,18 @@
     <div class="card-body">
       <h2 class="card-title">How to make a new branch in Git and Merge branches</h2>
       <ol>
-        <li>Inside your new repo in your terminal, enter "git checkout -b {branch_name}" to make a new branch</li>
+        <li>Inside your new repo in your terminal, enter <code>git checkout -b {branch_name}</code> to make a new branch</li>
         <li>Now inside your new branch, all commits and pushes will show in this new branch</li>
-        <li>To merge changes in one branch to another, you will do something called "git pull". A
-          "git pull" is the same as git merge and git fetch</li>
+        <li>To merge changes in one branch to another, you will do something called <code>git pull</code>. A
+          <code>git pull</code> is the same as git merge and git fetch</li>
         <li>Or you could something called a pull request on Github.com. This is usually done when working in a team however, since its
-          main function is for code review. However, this way helps with addressing merge conflicts. Once the review is done, you can merge manually on the github.com. Then all users can do a "git pull origin {branch}"
+          main function is for code review. However, this way helps with addressing merge conflicts. Once the review is done, you can merge manually on the github.com. Then all users can do a
+          <code>git pull origin {branch}</code>
         to get the latest changes</li>
+        <br>
         <img src="images/git_pull_request.png" class="remote-img">
+        <br>
+        <br>
       </ol>
     </div>
 
