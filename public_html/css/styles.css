@@ -2,3 +2,13 @@
   max-width: 50%;
   height: auto;
 }
+
+.logo-size{
+  width: 10%;
+  height: 75%;
+  padding: 10px;
+}
+
+.heading-padding{
+  padding-top: 20px;
+}
