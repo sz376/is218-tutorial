@@ -33,7 +33,7 @@
       <li>Once inside the directory, enter git init to initialize a local git repository</li>
       <li>Enter “mkdir public_html”</li>
       <li>Enter "touch public_html/index.html" to make an html page</li>
-      <li>Go on to GitHub.com, log in, and make a new git repository without the README.md</li>
+      <li>Go on to <a href="https://github.com/" target="_blank">github.com</a>, log in, and make a new git repository without the README.md</li>
       <li>Copy and paste your new github link</li>
       <img src="images/public_repo.png" class="remote-img">
       <li>Enter "git branch -M main" to change branch name to default branch name on public repo</li>
@@ -46,9 +46,17 @@
     </ol>
   </div>
   <div>
-    <h2 class="text-left">How to make a new branch in Git</h2>
+    <h2 class="text-left">How to make a new branch in Git and Merge branches</h2>
     <ol>
-      <li>Inside your new repo,
+      <li>Inside your new repo in your terminal, enter "git checkout -b {branch_name}" to make a new branch</li>
+      <li>Now inside your new branch, all commits and pushes will on show in this new branch</li>
+      <h4>How to merge branches</h4>
+      <li>Do merge changes in one branch to another, you will do something called "git pull". A
+        "git pull" is the same as git merge and git fetch</li>
+      <li>Or you could something called a pull request on Github.com. This is usually done when working in a team however, since its
+        main function is for code review. Once the review is done, you can merge manually on the github.com. Then all users can do a "git pull origin {branch}"
+      to get the latest changes</li>
+      <img src="images/git_pull_request.png" class="remote-img">
     </ol>
   </div>
 </body>
