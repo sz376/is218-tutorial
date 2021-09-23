@@ -35,10 +35,13 @@
 
   <div class="card card-size mx-auto">
     <div class="card-body">
-      <h2 class="card-title">How to make a start an Apache server</h2>
+      <h2 class="card-title">How to make a start an Apache server on Docker</h2>
       <ol>
+        <li>Download docker from <a href="https://docs.docker.com/get-docker/">docker.com</a>
         <li>Enter terminal and enter your project directory.</li>
-        <li>Enter <code>touch Dockerfile</code> if it does not already exist, then <code>vi Dockerfile</code></li>
+        <li>Enter <code>touch Dockerfile</code> if it does not already exist, then <code>vi Dockerfile</code>
+          A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image</li>
+        <img src="images/docker_download.png" class="remote-img">
         <li>Make sure your Dockerfile has the following text:</li>
         <code>
             FROM httpd:2.4<br>

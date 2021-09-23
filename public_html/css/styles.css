@@ -9,6 +9,12 @@
   padding: 10px;
 }
 
+.logo-size:hover{
+  width: 11%;
+  height: 75%;
+  padding: 10px;
+}
+
 .heading-padding{
   padding-top: 20px;
 }
