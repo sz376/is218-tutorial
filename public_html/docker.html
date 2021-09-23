@@ -27,7 +27,7 @@
 
   <h1 class="text-center heading-padding">How to host a website on Azure Cloud</h1>
   <div class="text-center">
-    <a href="index.html"><img src="images/github.png" class="mx-auto logo-size" alt="..."></a>
+    <a href="index.html"><img src="images/github.png" class="mx-auto github-logo" alt="..."></a>
     <a href="apache.html"><img src="images/apache.png" class="mx-auto logo-size" alt="..."></a>
     <a href="docker.html"><img src="images/docker.png" class="mx-auto logo-size" alt="..."></a>
     <a href="azure.html"><img src="images/azure.png" class="mx-auto logo-size" alt="..."></a>
@@ -35,17 +35,7 @@
   </div>
   <div class="card card-size mx-auto">
     <div class="card-body">
-      <h2 class="card-title">How to setup Docker</h2>
-      <ol>
-        <li></li>
-
-      </ol>
-    </div>
-  </div>
-
-  <div class="card card-size mx-auto">
-    <div class="card-body">
-      <h2 class="card-title">How to setup webpage using Docker</h2>
+      <h2 class="card-title">How to setup webpage using Docker Compose</h2>
       <ol>
         <li>If you haven't already, make a Dockerfile (steps in apache page)</li>
         <li>Enter <code>touch docker-compose.yml</code> to create a file that will deploy,
@@ -62,9 +52,11 @@
           &nbsp&nbsp&nbsp&nbspvolumes:<br>
           &nbsp&nbsp&nbsp&nbsp&nbsp- ./public_html/:/usr/local/apache2/htdocs/
         </code><br>
+        <img src="images/docker-compose_image.png" class="remote-img">
         <li>Save and exit vi.</li>
         <li>In your terminal enter <code>docker compose up -d</code> to run the docker compose file, which in this case will start an apache server.</li>
         <li>Now open up your favorite browser and goto this url localhost:8080 to see your site.</li>
+        <li>To stop the docker container, enter <code>docker compose down</code>.
       </ol>
     </div>
   </div>
