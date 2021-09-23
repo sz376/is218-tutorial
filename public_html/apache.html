@@ -47,15 +47,16 @@
             FROM httpd:2.4<br>
             COPY ./public_html/ /usr/local/apache2/htdocs/
         </code><br>
-        <img src="images/Dockerfile.png" class="dockerfile-img">
+        <img src="images/dockerfile_image.png" class="remote-img">
         <li>Save and exit vi.</li>
         <li>In the terminal, enter the following <code>docker build -t my-apache .</code></li>
         <li>Enter <code>docker run -dit -p 8080:80 --name my-running-app my-apache </code></li>
         <li>Now open up your favorite browser and goto this url <a href="localhost:8080">localhost:8080</a> to see your site.</li>
-        <br><img src="images/sitepreview.png" class="sitepreview-img" width="682">
+        <br><img src="images/sitepreview.png" class="remote-img" width="682">
       </ol>
     </div>
   </div>
+  <br><br>
   </div>
 </body>
 </html>
