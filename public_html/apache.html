@@ -35,12 +35,23 @@
 
   <div class="card card-size mx-auto">
     <div class="card-body">
-      <h2 class="card-title">How to setup docker</h2>
+      <h2 class="card-title">How to make a start an Apache server</h2>
       <ol>
-
+        <li>Enter terminal and enter your project directory.</li>
+        <li>Enter <code>touch Dockerfile</code> if it does not already exist, then <code>vi Dockerfile</code></li>
+        <li>Make sure your Dockerfile has the following text:</li>
+        <code>
+            FROM httpd:2.4<br>
+            COPY ./public_html/ /usr/local/apache2/htdocs/
+        </code><br>
+        <img src="images/Dockerfile.png" class="dockerfile-img">
+        <li>Save and exit vi.</li>
+        <li>In the terminal, enter the following <code>docker build -t my-apache .</code></li>
+        <li>Enter <code>docker run -dit -p 8080:80 --name my-running-app my-apache </code></li>
+        <li>Now open up your favorite browser and goto this url <a href="localhost:8080">localhost:8080</a> to see your site.</li>
       </ol>
     </div>
   </div>
-
+  </div>
 </body>
 </html>
