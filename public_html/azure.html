@@ -52,6 +52,56 @@
         <li>Once you log into Azure, navigate to <a href="https://portal.azure.com/">https://portal.azure.com/</a></li>
         <li>If you don’t have a Microsoft account, create one first at <a href="https://signup.live.com/">https://signup.live.com/</a></li>
         <li>After you’ve created your email address,  go to: <a href="https://azure.microsoft.com/en-us/free/students/ ">https://azure.microsoft.com/en-us/free/students/ </a>to join the Azure for Students plan.</li>
+        <li>After activating your account, goto <a href="https://portal.azure.com/">https://portal.azure.com/</a> again and click on "Create a resource."</li>
+        <br>
+        <img src="images/azure2.png" class="remote-img">
+        <li>On the left hand column, select "Containers" and then "Create" under "Container Registery."</li>
+        <br>
+        <img src="images/azure3.png" class="remote-img"><img src="images/azure4.png" class="remote-img">
+        <li>Fill out the Project Details. You can create a new Resource group, for example "is218". Name it however you like after you are done, click Review + create.</li>
+        <br>
+        <img src="images/azure5.png" class="remote-img">
+        <li>Click on "Goto resource" and then click on Access keys on the left column. Make sure admin user is checked off</li>
+        <br>
+        <img src="images/azure6.png" class="remote-img">
+        <li>Open the cloud shell by clicking on the icon highlighted with the red arrow below:</li>
+        <br>
+        <img src="images/azure7.png" class="remote-img">
+        <li>If an existing storage account doesn’t exist, a new one must be created.</li>
+        <br>
+        <img src="images/azure8.png" class="remote-img">
+        <li>Clone the source code from GitHub to Azure: <code>git clone https://github.com/sz376/is218-tutorial</code></li>
+        <li>Move into the directory with <code>cd is218-tutorial</code></li>
+        <li>Run the build command by running <code>az acr build --registry is218tutorial --image image .</code></li>
+        <br>
+        <img src="images/azure9.png" class="remote-img">
+        <li>Navigate back to Home, and select Create a resource. In the left column, select "Web" and then "Create" under "Web App."</li>
+        <br>
+        <img src="images/azure10.png" class="remote-img">
+        <li>Fill out this details page again, make sure "Publish" is set to "Docker Container." Click on "Next: Docker"</li>
+        <br>
+        <img src="images/azure11.png" class="remote-img">
+        <li>On this page set "Image Source" as "Azure Container Registry." and choose the registery we created on the previous steps. </li>
+        <br>
+        <img src="images/azure12.png" class="remote-img">
+        <li>Click "Review + create."</li>
+        <li>Navigate back to home, you should see your new website under "Recent Resources." if not, click on "App Services."</li>
+        <br>
+        <img src="images/azure13.png" class="remote-img"><img src="images/azure14.png" class="remote-img">
+        <li>Open the resource. The URL of your website should be in the "Overview" panel. If it doesnt appear immediately, give it a couple of minutes.</li>
+        <br>
+        <img src="images/azure15.png" class="remote-img">
+        <li>Our site should be live at <a href="https://is218website.azurewebsites.net">https://is218website.azurewebsites.net</a></li>
+
+
+
+        
+
+
+
+
+
+        
 
       </ol>
     </div>
