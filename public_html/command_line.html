@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>IS 218 Tutorial</title>
+
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="IS 218 Tutorial">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body class="background-color">
+
+  <h1 class="text-center heading-padding">How to host a website on Azure Cloud</h1>
+  <div class="text-center">
+    <a href="index.html"><img src="images/github.png" class="mx-auto github-logo" alt="..."></a>
+    <a href="apache.html"><img src="images/apache.png" class="mx-auto logo-size" alt="..."></a>
+    <a href="docker.html"><img src="images/docker.png" class="mx-auto logo-size" alt="..."></a>
+    <a href="azure.html"><img src="images/azure.png" class="mx-auto logo-size" alt="..."></a>
+    <a href="command_line.html"><img src="images/terminal-logo.png" class="mx-auto logo-size" alt="..."></a>
+  </div>
+
+  <div class="card card-size mx-auto">
+    <div class="card-body">
+      <h2 class="card-title">Command Line/Linux Commands</h2>
+      <h4>Command Line</h4>
+      <ul>
+        <li><code>ls</code>  - list files</li>
+        <li><code>mkdir</code>  - make directory</li>
+        <li><code>cd</code>  (tab to auto complete) - change current directory</li>
+        <li><code>pwd</code>  - present working directory</li>
+        <li><code>touch</code>  -makes file</li>
+        <li><code>rm</code>  - remove file</li>
+        <li><code>-r</code>  - recursive for removing directories</li>
+        <li><code>mv</code>  - renames files (mv name_file new_file) OR move files (mv name_file directory/) must have slash for directory</li>
+        <li><code>cd ..</code>  - go back a directory</li>
+        <li><code>cd ~</code>  - home directory</li>
+        <li><code>rm -rf .git</code>  - destroys git repo</li>
+        <li><code>vi</code>  - visual editor in terminal</li>
+      </ul>
+      <h4>Docker Commands</h4>
+      <ul>
+        <li><code>docker compose up -d (daemon)</code>  - creates and starts a container for a service</li>
+        <li><code>docker compose down</code>  - stops and removes containers and everything attached</li>
+        <li><code>docker ps</code>  - list all running docker containers</li>
+        <li><code>docker kill CONTAINER-ID</code>  - stops container</li>
+      </ul>
+      <h4>Git Commands</h4>
+      <ul>
+        <li><code>git init</code> - creates local git repo</li>
+        <li><code>git status</code> - checks if there are updated files/new files that need to be added</li>
+        <li><code>git add FILENAME</code> - adds file to be committed</li>
+        <li><code>git commit -m “COMMIT MESSAGE”</code> - commits changes to be pushed</li>
+        <li><code>git remote add origin LINK</code> - make local repository push to remote repository</li>
+        <li><code>git push -u origin BRANCH</code> - pushes commits to chosen branch</li>
+        <li><code>git merge master</code> - merges changes from different branch</code><</li>
+        <li><code>git pull origin BRANCH</code> - does git fetch and git merge</li>
+      </ul>
+      <h4>Azure Cloud Commands</h4>
+      <ul>
+        <li><code>az acr build --registry {Your Registry Name} --image image .</code> - Builds azure cloud app image</li>
+      </ul>
+    </div>
+  </div>
+  <br>
+</body>
+</html>
