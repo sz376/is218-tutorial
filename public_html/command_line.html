@@ -54,10 +54,16 @@
       </ul>
       <h4>Docker Commands</h4>
       <ul>
-        <li><code>docker compose up -d (daemon)</code>  - creates and starts a container for a service</li>
-        <li><code>docker compose down</code>  - stops and removes containers and everything attached</li>
-        <li><code>docker ps</code>  - list all running docker containers</li>
-        <li><code>docker kill CONTAINER-ID</code>  - stops container</li>
+        <li><code>docker compose up -d (daemon)</code> - creates and starts a container for a service</li>
+        <li><code>docker compose down</code> - stops and removes containers and everything attached</li>
+        <li><code>docker ps</code> - list all running docker containers</li>
+        <li><code>docker kill CONTAINER-ID</code> - stops container</li>
+        <li><code>docker build -t {image name} .</code> - build docker container image</li>
+        <li><code>docker tag {image name} {docker username}/{image name}</code></li>
+        <li><code>docker push {docker username}/{docker repo name}</code></li>
+        <li><code>docker login azure</code> - login into azure cloud</li>
+        <li><code>docker context create aci {contest name}</code> - create docker context</li>
+        <li><code>docker context use {context}</code> - switch to different context</li>
       </ul>
       <h4>Git Commands</h4>
       <ul>
