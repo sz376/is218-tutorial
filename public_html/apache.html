@@ -23,7 +23,7 @@
 
 </head>
 
-<body class="bg-light">
+<body class="background-color">
 
   <h1 class="text-center heading-padding">How to host a website on Azure Cloud</h1>
   <div class="text-center">
@@ -31,13 +31,14 @@
     <a href="apache.html"><img src="images/apache.png" class="mx-auto logo-size" alt="..."></a>
     <a href="docker.html"><img src="images/docker.png" class="mx-auto logo-size" alt="..."></a>
     <a href="azure.html"><img src="images/azure.png" class="mx-auto logo-size" alt="..."></a>
+    <a href="command_line.html"><img src="images/terminal_logo.png" class="mx-auto logo-size" alt="..."></a>
   </div>
 
   <div class="card card-size mx-auto">
     <div class="card-body">
       <h2 class="card-title">How to make a start an Apache server on Docker</h2>
       <ol>
-        <li>Download docker from <a href="https://docs.docker.com/get-docker/">docker.com</a>
+        <li>Download docker from <a href="https://docs.docker.com/get-docker/" target="_blank">docker.com</a>
         <li>Enter terminal and enter your project directory.</li>
         <li>Enter <code>touch Dockerfile</code> if it does not already exist, then <code>vi Dockerfile</code>
           A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image</li>
@@ -51,7 +52,7 @@
         <li>Save and exit vi.</li>
         <li>In the terminal, enter the following <code>docker build -t my-apache .</code></li>
         <li>Enter <code>docker run -dit -p 8080:80 --name my-running-app my-apache </code></li>
-        <li>Now open up your favorite browser and goto this url <a href="localhost:8080">localhost:8080</a> to see your site.</li>
+        <li>Now open up your favorite browser and goto this url <a href="localhost:8080" target="_blank">localhost:8080</a> to see your site.</li>
         <br><img src="images/sitepreview.png" class="remote-img" width="682">
       </ol>
     </div>
