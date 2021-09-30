@@ -59,11 +59,14 @@
         <li><code>docker ps</code> - list all running docker containers</li>
         <li><code>docker kill CONTAINER-ID</code> - stops container</li>
         <li><code>docker build -t {image name} .</code> - build docker container image</li>
-        <li><code>docker tag {image name} {docker username}/{image name}</code></li>
-        <li><code>docker push {docker username}/{docker repo name}</code></li>
+        li><code>docker login -u {docker username}</code> - log into docker hub</li>
+        <li><code>docker tag {image name} {docker username}/{image name}</code> - adds a tag to a docker image for pushing into docker cloud</li>
+        <li><code>docker push {docker username}/{docker repo name}</code> - pushes an image into docker hub</li>
         <li><code>docker login azure</code> - login into azure cloud</li>
-        <li><code>docker context create aci {contest name}</code> - create docker context</li>
+        <li><code>docker context create aci {context_name}</code> - create docker context</li>
+        <li><code>docker --context {context_name}</code> - run commands with a different context while staying in the default context.</li>
         <li><code>docker context use {context}</code> - switch to different context</li>
+
       </ul>
       <h4>Git Commands</h4>
       <ul>
@@ -75,10 +78,6 @@
         <li><code>git push -u origin BRANCH</code> - pushes commits to chosen branch</li>
         <li><code>git merge master</code> - merges changes from different branch</code></li>
         <li><code>git pull origin BRANCH</code> - does git fetch and git merge</li>
-      </ul>
-      <h4>Azure Cloud Commands</h4>
-      <ul>
-        <li><code>az acr build --registry {Your Registry Name} --image image .</code> - Builds azure cloud app image</li>
       </ul>
     </div>
   </div>
