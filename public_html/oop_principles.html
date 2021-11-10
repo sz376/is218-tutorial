@@ -40,16 +40,18 @@
       <h2 class="card-title">Calculator Program and Object Oriented Principles</h2>
       <p> The calculator program uses many of the object oriented principles </p>
       <ol>
-        <li>Encapsulation: </li>
+        <li>Encapsulation: Encapsulation is the the priciple of restricting access to certain data. For example, in the Calculator
+        program, the calculator class has a history list, which shouldn't be accessible to anyone outside of the class unless there
+        is a method made with the ability to share desired pieces of that list.</li>
         <li>Inheritance: Inheritance is when a class inherits the methods of a parent class. This is done so that code isn't
         written repeatedly. For example, the calculation class will have a method that turns values into a float. So instead
         of re wrting this method several times in the addition and substraction classes, you can inherit the calculation method so that
         you can use that existing method and these new classes can now focus on writing unique methods.</li>
-        <li>Polymorphism: This is the ability to perform a function with multiple implementations. In the Calculator
+        <li>Polymorphism: Polymorphsim is the ability to perform a function with multiple implementations. In the Calculator
         program, we have our calculation class that takes a list of values. We then have several child classes that inherits
         the constructor class and uses this list to return varying math results.
         </li>
-        <li>Abstraction: This is the principle that creates a class with the intent to be inherited by other classes.
+        <li>Abstraction: Abstraction is the principle that creates a class with the intent to be inherited by other classes.
         This way certain methods and functions that will be run by default for each child class will already be once
         in the abstract class, so then the class can be implemented in different ways for each child class.
         For example, turning the tuple values into floats can be done in the abstract class so that
