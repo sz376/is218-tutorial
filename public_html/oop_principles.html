@@ -33,35 +33,32 @@
     <a href="azure.html"><img src="images/azure.png" class="mx-auto logo-size" alt="..."></a>
     <a href="command_line.html"><img src="images/terminal_logo.png" class="mx-auto logo-size" alt="..."></a>
     <a href="oop_principles.html"><img src="images/calculator.png" class="mx-auto logo-size" alt="..."></a>
-
   </div>
+
   <div class="card card-size mx-auto">
     <div class="card-body">
-      <h2 class="card-title">How to setup webpage using Docker Compose</h2>
+      <h2 class="card-title">Calculator Program and Object Oriented Principles</h2>
+      <p> The calculator program uses many of the object oriented principles </p>
       <ol>
-        <li>If you haven't already, make a Dockerfile (steps in apache page)</li>
-        <li>Enter <code>touch docker-compose.yml</code> to create a file that will deploy,
-          combine, and configure multiple docker-container at the same time</li>
-        <li>Enter <code>vi docker-compose.yml</code></li>
-        <li>Make sure the docker-compose.yml file has the following text:</li>
-        <code>
-          version: "3.2"<br>
-          services:<br>
-          &nbsp&nbsp&nbspapache:<br>
-          &nbsp&nbsp&nbsp&nbspbuild: .<br>
-          &nbsp&nbsp&nbsp&nbspports:<br>
-          &nbsp&nbsp&nbsp&nbsp&nbsp- "8080:80"<br>
-          &nbsp&nbsp&nbsp&nbspvolumes:<br>
-          &nbsp&nbsp&nbsp&nbsp&nbsp- ./public_html/:/usr/local/apache2/htdocs/
-        </code><br>
-        <img src="images/docker-compose_image.png" class="remote-img">
-        <li>Save and exit vi.</li>
-        <li>In your terminal enter <code>docker compose up -d</code> to run the docker compose file, which in this case will start an apache server.</li>
-        <li>Now open up your favorite browser and goto this url localhost:8080 to see your site.</li>
-        <li>To stop the docker container, enter <code>docker compose down</code>.
+        <li>Encapsulation: </li>
+        <li>Inheritance: Inheritance is when a class inherits the methods of a parent class. This is done so that code isn't
+        written repeatedly. For example, the calculation class will have a method that turns values into a float. So instead
+        of re wrting this method several times in the addition and substraction classes, you can inherit the calculation method so that
+        you can use that existing method and these new classes can now focus on writing unique methods.</li>
+        <li>Polymorphism: This is the ability to perform a function with multiple implementations. In the Calculator
+        program, we have our calculation class that takes a list of values. We then have several child classes that inherits
+        the constructor class and uses this list to return varying math results.
+        </li>
+        <li>Abstraction: This is the principle that creates a class with the intent to be inherited by other classes.
+        This way certain methods and functions that will be run by default for each child class will already be once
+        in the abstract class, so then the class can be implemented in different ways for each child class.
+        For example, turning the tuple values into floats can be done in the abstract class so that
+        it doesn't have to be written in each following class.</li>
       </ol>
     </div>
   </div>
-<br>
+  <br>
+
+  </div>
 </body>
 </html>
