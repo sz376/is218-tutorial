@@ -33,35 +33,19 @@
     <a href="azure.html"><img src="images/azure.png" class="mx-auto logo-size" alt="..."></a>
     <a href="command_line.html"><img src="images/terminal_logo.png" class="mx-auto logo-size" alt="..."></a>
     <a href="separation.html"><img src="images/oop.png" class="mx-auto logo-size" alt="..."></a>
-
   </div>
+
   <div class="card card-size mx-auto">
     <div class="card-body">
-      <h2 class="card-title">How to setup webpage using Docker Compose</h2>
+      <h2 class="card-title">Separation of Concerns</h2>
+      The calculator program utilizes the design pattern "Separation of Concerns" by separating the different utilites of
+      a calculator:
       <ol>
-        <li>If you haven't already, make a Dockerfile (steps in apache page)</li>
-        <li>Enter <code>touch docker-compose.yml</code> to create a file that will deploy,
-          combine, and configure multiple docker-container at the same time</li>
-        <li>Enter <code>vi docker-compose.yml</code></li>
-        <li>Make sure the docker-compose.yml file has the following text:</li>
-        <code>
-          version: "3.2"<br>
-          services:<br>
-          &nbsp&nbsp&nbspapache:<br>
-          &nbsp&nbsp&nbsp&nbspbuild: .<br>
-          &nbsp&nbsp&nbsp&nbspports:<br>
-          &nbsp&nbsp&nbsp&nbsp&nbsp- "8080:80"<br>
-          &nbsp&nbsp&nbsp&nbspvolumes:<br>
-          &nbsp&nbsp&nbsp&nbsp&nbsp- ./public_html/:/usr/local/apache2/htdocs/
-        </code><br>
-        <img src="images/docker-compose_image.png" class="remote-img">
-        <li>Save and exit vi.</li>
-        <li>In your terminal enter <code>docker compose up -d</code> to run the docker compose file, which in this case will start an apache server.</li>
-        <li>Now open up your favorite browser and goto this url localhost:8080 to see your site.</li>
-        <li>To stop the docker container, enter <code>docker compose down</code>.
+        <li>By separating each type of calculation into separate classes, you can make changes to "addition" without affecting "subtraction".</li>
+        <li>Separating the history functionality into it's own class instead of putting it in the calculator class keeps related code and functions together.</li>
       </ol>
     </div>
   </div>
-<br>
+  <br>
 </body>
 </html>
