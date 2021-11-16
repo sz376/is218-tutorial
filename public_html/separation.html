@@ -38,28 +38,17 @@
 
   <div class="card card-size mx-auto">
     <div class="card-body">
-      <h2 class="card-title">How to make a start an Apache server on Docker</h2>
-      <ol>
-        <li>Download docker from <a href="https://docs.docker.com/get-docker/" target="_blank">docker.com</a>
-        <li>Enter terminal and enter your project directory.</li>
-        <li>Enter <code>touch Dockerfile</code> if it does not already exist, then <code>vi Dockerfile</code>
-          A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image</li>
-        <img src="images/docker_download.png" class="remote-img">
-        <li>Make sure your Dockerfile has the following text:</li>
-        <code>
-            FROM httpd:2.4<br>
-            COPY ./public_html/ /usr/local/apache2/htdocs/
-        </code><br>
-        <img src="images/dockerfile_image.png" class="remote-img">
-        <li>Save and exit vi.</li>
-        <li>In the terminal, enter the following <code>docker build -t my-apache .</code></li>
-        <li>Enter <code>docker run -dit -p 8080:80 --name my-running-app my-apache </code></li>
-        <li>Now open up your favorite browser and goto this url <a href="localhost:8080" target="_blank">localhost:8080</a> to see your site.</li>
-        <br><img src="images/sitepreview.png" class="remote-img" width="682">
-      </ol>
+      <h2 class="card-title">Separation of Concerns</h2>
+      The calculator program utilizes the design pattern "Separation of Concerns" by separating the different utilites of
+      a calculator:
+      <ul>
+        <li>By separating each type of calculation into separate classes, you can make changes to "addition" without affecting "subtraction".</li>
+        <li>Separating the history functionality into it's own class instead of putting it in the calculator class keeps related code and functions together.</li>
+        <li>Prior, the calculator class handled both calculations and history management, which was a lot code and functions that were not related.</li>
+        <li>Keeping conceptually similar functions together, it improves readability and makes it easier to keep track of what each class is doing.</li>
+      </ul>
     </div>
   </div>
-  <br><br>
-  </div>
+  <br>
 </body>
 </html>
